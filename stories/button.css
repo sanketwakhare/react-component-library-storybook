@@ -1,0 +1,135 @@
+:root {
+    --disabled-01: #c6c6c6;
+    --disabled-02: #8d8d8d;
+    --primary: #6205cb;
+    --primary-text: white;
+    --success: green;
+    --danger: red;
+    --warning: orange;
+    --info: lightskyblue;
+}
+
+.storybook-button {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+}
+
+
+/* button variants */
+
+.storybook-button--primary {
+    color: var(--primary-text);
+    background-color: var(--primary);
+}
+
+.storybook-button--secondary {
+    color: var(--primary);
+    background-color: transparent;
+    box-shadow: var(--primary) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--text {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.storybook-button--disabled {
+    border-color: var(--disabled-01);
+    background: var(--disabled-01);
+    box-shadow: none;
+    color: var(--disabled-02);
+    cursor: not-allowed;
+}
+
+
+/* size properties */
+
+.storybook-button--xx-small {
+    font-size: 8px;
+    padding: 8px 8px;
+}
+
+.storybook-button--x-small {
+    font-size: 10px;
+    padding: 9px 12px;
+}
+
+.storybook-button--small {
+    font-size: 12px;
+    padding: 10px 16px;
+}
+
+.storybook-button--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+}
+
+.storybook-button--large {
+    font-size: 16px;
+    padding: 12px 24px;
+}
+
+.storybook-button--x-large {
+    font-size: 18px;
+    padding: 13px 28px;
+}
+
+.storybook-button--xx-large {
+    font-size: 20px;
+    padding: 14px 32px;
+}
+
+
+/* button colors */
+
+.storybook-button--success {
+    color: var(--primary-text);
+    ;
+    background-color: var(--success);
+}
+
+.storybook-button--outline-success {
+    color: var(--success);
+    background-color: transparent;
+    box-shadow: var(--success) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--danger {
+    color: var(--primary-text);
+    ;
+    background-color: var(--danger);
+}
+
+.storybook-button--outline-danger {
+    color: var(--danger);
+    background-color: transparent;
+    box-shadow: var(--danger) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--warning {
+    color: var(--primary-text);
+    ;
+    background-color: var(--warning);
+}
+
+.storybook-button--outline-warning {
+    color: var(--warning);
+    background-color: transparent;
+    box-shadow: var(--warning) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--info {
+    color: var(--primary-text);
+    background-color: var(--info);
+}
+
+.storybook-button--outline-info {
+    color: var(--info);
+    background-color: transparent;
+    box-shadow: var(--info) 0px 0px 0px 1px inset;
+}
