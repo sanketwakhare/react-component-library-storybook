@@ -48,6 +48,14 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * start icon bootstrap class name
+   */
+  startIconStyle?: string;
+  /**
+   * end icon bootstrap class name
+   */
+  endIconStyle?: string;
 }
 
 /**
@@ -59,6 +67,8 @@ export const Button = ({
   backgroundColor,
   label,
   disabled,
+  startIconStyle = "",
+  endIconStyle = "",
   ...props
 }: ButtonProps) => {
   return (
@@ -73,7 +83,9 @@ export const Button = ({
       disabled={disabled}
       {...props}
     >
+      {startIconStyle && <i className={startIconStyle}></i>}
       {label}
+      {endIconStyle && <i className={endIconStyle}></i>}
     </button>
   );
 };

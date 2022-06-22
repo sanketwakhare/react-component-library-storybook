@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Button } from "./Button";
 
 export default {
-  title: "Components/Button/Size",
+  title: "Components/Button/Icons",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
@@ -16,20 +16,20 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  label: "Small",
+export const StartIcon = Template.bind({});
+StartIcon.args = {
+  label: "Back",
+  startIconStyle: "bi bi-arrow-left",
 };
 
-export const Medium = Template.bind({});
-Medium.args = {
-  size: "medium",
-  label: "Medium",
+export const EndIcon = Template.bind({});
+EndIcon.args = {
+  label: "Send",
+  endIconStyle: "bi bi-send",
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  label: "Large",
+export const ButtonIcon = Template.bind({});
+ButtonIcon.args = {
+  label: "",
+  endIconStyle: "bi bi-cloud-arrow-down",
 };
