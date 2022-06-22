@@ -1,15 +1,19 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
 import { Button } from "./Button";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Button",
+  title: "Button",
   component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: { control: "color" },
+    variant: { control: "select" },
+    disabled: { control: "radio" },
+    size: { control: "select" },
   },
 } as ComponentMeta<typeof Button>;
 
@@ -21,12 +25,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   variant: "primary",
   label: "Primary",
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "Secondary",
-  variant: "secondary",
+  onClick: action("primary clicked"),
 };
 
 export const Text = Template.bind({});
@@ -39,8 +38,80 @@ export const Disabled = Template.bind({});
 Disabled.args = {
   size: "medium",
   label: "Disabled",
-  variant: "primary",
+  variant: "disabled",
   disabled: true,
+};
+
+export const Success = Template.bind({});
+Success.args = {
+  label: "Success",
+  variant: "success",
+};
+
+export const Danger = Template.bind({});
+Danger.args = {
+  label: "Error",
+  variant: "danger",
+};
+
+export const Warning = Template.bind({});
+Warning.args = {
+  label: "Warning",
+  variant: "warning",
+};
+
+export const Info = Template.bind({});
+Info.args = {
+  label: "Information",
+  variant: "info",
+};
+
+export const Light = Template.bind({});
+Light.args = {
+  label: "Light",
+  variant: "light",
+};
+
+export const Dark = Template.bind({});
+Dark.args = {
+  label: "Dark",
+  variant: "dark",
+};
+
+export const Outlined = Template.bind({});
+Outlined.args = {
+  label: "Outlined",
+  variant: "outlined-primary",
+};
+
+export const OutlinedSuccess = Template.bind({});
+OutlinedSuccess.args = {
+  label: "Outlined Success",
+  variant: "outlined-success",
+};
+
+export const OutlinedDanger = Template.bind({});
+OutlinedDanger.args = {
+  label: "Outlined Error",
+  variant: "outlined-danger",
+};
+
+export const OutlinedWarning = Template.bind({});
+OutlinedWarning.args = {
+  label: "Outlined Warning",
+  variant: "outlined-warning",
+};
+
+export const OutlinedInfo = Template.bind({});
+OutlinedInfo.args = {
+  label: "Outlined Information",
+  variant: "outlined-info",
+};
+
+export const OutlinedDark = Template.bind({});
+OutlinedDark.args = {
+  label: "Outlined Dark",
+  variant: "outlined-dark",
 };
 
 export const Small = Template.bind({});
@@ -55,28 +126,4 @@ Large.args = {
   size: "large",
   label: "Large",
   variant: "primary",
-};
-
-export const Success = Template.bind({});
-Success.args = {
-  label: "Success",
-  color: "success",
-};
-
-export const Danger = Template.bind({});
-Danger.args = {
-  label: "Error",
-  color: "danger",
-};
-
-export const Warning = Template.bind({});
-Warning.args = {
-  label: "Warning",
-  color: "warning",
-};
-
-export const Info = Template.bind({});
-Info.args = {
-  label: "Information",
-  color: "info",
 };

@@ -3,9 +3,28 @@ import "./button.css";
 
 export interface ButtonProps {
   /**
+   * Button contents
+   */
+  label: string;
+  /**
    * Is this the principal call to action on the page?
    */
-  variant?: "primary" | "secondary" | "text";
+  variant?:
+    | "primary"
+    | "text"
+    | "success"
+    | "danger"
+    | "warning"
+    | "info"
+    | "light"
+    | "dark"
+    | "disabled"
+    | "outlined-primary"
+    | "outlined-success"
+    | "outlined-danger"
+    | "outlined-warning"
+    | "outlined-info"
+    | "outlined-dark";
   /**
    * What background color to use
    */
@@ -22,17 +41,9 @@ export interface ButtonProps {
     | "x-large"
     | "xx-large";
   /**
-   * Button contents
-   */
-  label: string;
-  /**
    * is disabled
    */
   disabled?: boolean;
-  /**
-   * color
-   */
-  color?: "success" | "danger" | "warning" | "info";
   /**
    * Optional click handler
    */
@@ -48,7 +59,6 @@ export const Button = ({
   backgroundColor,
   label,
   disabled,
-  color,
   ...props
 }: ButtonProps) => {
   return (
@@ -57,21 +67,10 @@ export const Button = ({
       className={[
         "storybook-button",
         `storybook-button--${size}`,
-        disabled ? `storybook-button--disabled` : ``,
-        variant === "primary"
-          ? color
-            ? `storybook-button--${color}`
-            : `storybook-button--${variant}`
-          : ``,
-        variant === "secondary"
-          ? color
-            ? `storybook-button--outline-${color}`
-            : `storybook-button--${variant}`
-          : ``,
+        `storybook-button--${variant}`,
       ].join(" ")}
       style={{ backgroundColor }}
       disabled={disabled}
-      color={color}
       {...props}
     >
       {label}

@@ -3,10 +3,13 @@
     --disabled-02: #8d8d8d;
     --primary: #6205cb;
     --primary-text: white;
+    --outlined-text: black;
     --success: green;
     --danger: red;
     --warning: orange;
     --info: lightskyblue;
+    --light: #f6f6f6;
+    --dark: black;
 }
 
 .storybook-button {
@@ -27,12 +30,6 @@
     background-color: var(--primary);
 }
 
-.storybook-button--secondary {
-    color: var(--primary);
-    background-color: transparent;
-    box-shadow: var(--primary) 0px 0px 0px 1px inset;
-}
-
 .storybook-button--text {
     color: var(--primary);
     background-color: transparent;
@@ -44,6 +41,80 @@
     box-shadow: none;
     color: var(--disabled-02);
     cursor: not-allowed;
+}
+
+.storybook-button--success {
+    color: var(--primary-text);
+    background-color: var(--success);
+}
+
+.storybook-button--danger {
+    color: var(--primary-text);
+    background-color: var(--danger);
+}
+
+.storybook-button--warning {
+    color: var(--outlined-text);
+    background-color: var(--warning);
+}
+
+.storybook-button--info {
+    color: var(--outlined-text);
+    background-color: var(--info);
+}
+
+.storybook-button--light {
+    color: var(--outlined-text);
+    background-color: var(--light);
+}
+
+.storybook-button--dark {
+    color: var(--primary-text);
+    background-color: var(--dark);
+}
+
+
+/* Outlined variants  */
+
+.storybook-button--outlined-primary {
+    color: var(--primary);
+    background-color: transparent;
+    box-shadow: var(--primary) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--outlined-text {
+    color: var(--primary);
+    background-color: transparent;
+}
+
+.storybook-button--outlined-success {
+    color: var(--success);
+    background-color: transparent;
+    box-shadow: var(--success) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--outlined-danger {
+    color: var(--danger);
+    background-color: transparent;
+    box-shadow: var(--danger) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--outlined-warning {
+    color: var(--warning);
+    background-color: transparent;
+    box-shadow: var(--warning) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--outlined-info {
+    color: var(--info);
+    background-color: transparent;
+    box-shadow: var(--info) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--outlined-dark {
+    color: var(--dark);
+    background-color: transparent;
+    box-shadow: var(--dark) 0px 0px 0px 1px inset;
 }
 
 
@@ -82,54 +153,4 @@
 .storybook-button--xx-large {
     font-size: 20px;
     padding: 14px 32px;
-}
-
-
-/* button colors */
-
-.storybook-button--success {
-    color: var(--primary-text);
-    ;
-    background-color: var(--success);
-}
-
-.storybook-button--outline-success {
-    color: var(--success);
-    background-color: transparent;
-    box-shadow: var(--success) 0px 0px 0px 1px inset;
-}
-
-.storybook-button--danger {
-    color: var(--primary-text);
-    ;
-    background-color: var(--danger);
-}
-
-.storybook-button--outline-danger {
-    color: var(--danger);
-    background-color: transparent;
-    box-shadow: var(--danger) 0px 0px 0px 1px inset;
-}
-
-.storybook-button--warning {
-    color: var(--primary-text);
-    ;
-    background-color: var(--warning);
-}
-
-.storybook-button--outline-warning {
-    color: var(--warning);
-    background-color: transparent;
-    box-shadow: var(--warning) 0px 0px 0px 1px inset;
-}
-
-.storybook-button--info {
-    color: var(--primary-text);
-    background-color: var(--info);
-}
-
-.storybook-button--outline-info {
-    color: var(--info);
-    background-color: transparent;
-    box-shadow: var(--info) 0px 0px 0px 1px inset;
 }
