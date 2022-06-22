@@ -51,7 +51,7 @@ export interface ButtonProps {
 }
 
 /**
- * Primary UI component for user interaction
+ * Button component
  */
 export const Button = ({
   variant = "primary",
