@@ -1,9 +1,12 @@
 # react-component-library-storybook
 
-React component library using storybook
-This is react component library.
+React component library using storybook.
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Storybook](https://img.shields.io/badge/-Storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white)
 
 ## Components present
+
 
 - **Button**
   - [x] normal
@@ -15,7 +18,7 @@ This is react component library.
 ## TODOs
 
 - **Button**
-- [ ] Toggle
+  - [ ] Toggle
   - [ ] Copy to clipboard
   - [ ] dropdown
 - **Button group**
