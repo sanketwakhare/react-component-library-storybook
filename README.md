@@ -7,7 +7,6 @@ React component library using storybook.
 
 ## Components present
 
-
 - **Button**
   - [x] normal
   - [x] outlined
@@ -17,54 +16,41 @@ React component library using storybook.
 
 ## TODOs
 
+- **Accordion**
+  - [ ] simple accordion `expand and collapse widget`
+  - [ ] accordion with icons
+- **Alert**
+- **Badge**
+  - [ ] badge on top left
+  - [ ] badge on top right
 - **Button**
   - [ ] Toggle
   - [ ] Copy to clipboard
   - [ ] dropdown
 - **Button group**
-  - [ ] toolbar buttons with states like hidden/disabled
-- **Badge**
-  - [ ] badge on top left
-  - [ ] badge on top right
-- **Divider**
-- **Combo Box**
-  - [ ] Single select
-  - [ ] Multi select
-  - [ ] Combo Box with search capability
-- **Icon**
-  - [ ] Icon
-- **Alert**
-- **Accordion**
-  - [ ] Expand and Collapse widget
-- **Toast** `with some timeout`
-  - [ ] success
-  - [ ] error
-  - [ ] warning
-  - [ ] info
-- **Links**
-  - [ ] active link
-  - [ ] disabled link
-  - [ ] normal link
-- **Tooltip**
-  - [ ] pop over
-- **Slider** with range `max and min values`
-  - [ ] read-only
-  - [ ] write change handlers
-- **Modal**
-  - [ ] generic modal
-    - [ ] header
-    - [ ] body
-    - [ ] footer
-  - SignUp modal
-  - SignIn modal
-- **Code Snippet Container**
-  - [ ] language selector
-  - [ ] copy code option
+  - [ ] toolbar buttons `with states like hidden/disabled`
 - **Chip**
   - [ ] disabled
   - [ ] closable
-- **ToolBar**
-  - [ ] with `save/ok/cancel/delete/close` button options
+- **Code Snippet Container**
+  - [ ] language selector
+  - [ ] copy code option
+- **Combo Box**
+  - [ ] Single select
+  - [ ] Multi select
+  - [ ] Combo Box `with search capability`
+- **Containers**
+  - [ ] Card
+  - [ ] Tabs
+  - [ ] Secondary Tabs
+  - [ ] Menu
+  - [ ] Pane
+  - [ ] Table
+- **Divider**
+  - [ ] horizontal
+  - [ ] vertical
+- **Icon**
+  - [ ] Icon
 - **Input**
   - **Checkbox**
     - [ ] normal
@@ -75,13 +61,13 @@ React component library using storybook.
     - [ ] normal
     - [ ] disabled
     - [ ] read-only
+  - **Input field `with search capability`**
+    - [ ] search icon left or right positions
+    - [ ] search handlers
   - **Radio**
     - [ ] normal
     - [ ] read-only
     - [ ] disabled
-  - **Input with search capability**
-    - [ ] search icon left or right positions
-    - [ ] search handlers
   - **Text**
     - [ ] password
     - [ ] number
@@ -90,16 +76,32 @@ React component library using storybook.
     - [ ] validate fields and show error message
   - **Timepicker**
     - [ ] validate fields and show error message
+- **Links**
+  - [ ] active link
+  - [ ] disabled link
+  - [ ] normal link
 - **Loader**
   - [ ] Spinner
   - [ ] Progress bar
-- **Containers**
-  - [ ] Card
-  - [ ] Tabs
-  - [ ] Secondary Tabs
-  - [ ] Menu
-  - [ ] Pane
-  - [ ] Table
+- **Modal**
+  - [ ] generic modal
+    - [ ] header
+    - [ ] body
+    - [ ] footer
+  - [ ] SignUp modal
+  - [ ] SignIn modal
+- **Slider** with range `max and min values`
+  - [ ] read-only
+  - [ ] write change handlers
+- **Toast** `with some timeout`
+  - [ ] success
+  - [ ] error
+  - [ ] warning
+  - [ ] info
+- **Tooltip**
+  - [ ] pop over
+- **ToolBar**
+  - [ ] with `save/ok/cancel/delete/close` button options
 - **WorkFlow widget**
   - [ ] header
   - [ ] body `can contain multiple pages`
